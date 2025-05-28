@@ -40,7 +40,6 @@ a {
     align-items: center;
     justify-content:space-between;
     padding-bottom: 5em;
-
 }
 
 .logo-text {
@@ -67,9 +66,22 @@ a {
     min-width: 30%;
 }
 
+.right-side {
+    display: flex;
+
+}
+
+/*this is not correct*/
 .img-holder {
-    background-color: rgb(101, 106, 110);
-    display: border-box;
+    background:  rgb(101, 106, 110);
+    display: flex;
+}
+
+img {
+    background:  rgb(101, 106, 110);
+    width: 500px;
+    height: 200px;
+    align-self: center;
 }
 
 button {
@@ -78,6 +90,5 @@ button {
     background: #3882F6;
     color: white;
     padding: 8px 24px;
-    
   }
 
