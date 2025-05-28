@@ -1,5 +1,48 @@
 /*stylesheet for landing page */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+/*consider flexing body*/
+/*padding? review all padding in html*/
 body {
     font-family: Roboto, sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
+  /* padding ?? */
+.top {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 5em;
+}
+
+/* flex ul to display li items horizontally*/
+/*remove bullets on ul with list style none*/
+ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+/*removes underline on hyperlink*/
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+  }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 5em;
+
+}
+
+.logo-text {
+    font-size: 24px;
+}
