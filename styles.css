@@ -46,3 +46,41 @@ a {
 .logo-text {
     font-size: 24px;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+/*not sure about widths*/
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    max-width: 40%;
+    min-width: 30%;
+}
+
+.img-holder {
+    background-color: rgb(101, 106, 110);
+    display: border-box;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background: #3882F6;
+    color: white;
+    padding: 8px 24px;
+    
+  }
+
+.img-holder (
+
+)
