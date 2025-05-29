@@ -71,6 +71,7 @@ a {
     align-items:flex-start;
 }
 
+/* CHANGE THIS INTO AN ACTUAL IMG PLACEHOLDER */
 /* expands color into whole flex item area*/
 .hero-right {
     display: flex;
