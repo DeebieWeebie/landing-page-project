@@ -1,12 +1,11 @@
 /*stylesheet for landing page */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
-
+* {
+    box-sizing: border-box;
+}
 /*consider flexing body*/
 /*padding? review all padding in html*/
 body {
     font-family: Roboto, sans-serif;
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
   /* padding ?? */
@@ -17,7 +16,7 @@ body {
     flex-direction: column;
     padding-left: 10em;
     padding-right: 10em;
-    padding-bottom: 5em;
+    padding-bottom: 10em;
 }
 
 /* flex ul to display li items horizontally*/
@@ -39,7 +38,7 @@ a {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 }
 
 .logo-text {
@@ -48,8 +47,9 @@ a {
 
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 2em;
 }
 
 .main-text {
@@ -58,30 +58,26 @@ a {
 }
 
 /*not sure about widths*/
-.left-side {
+.hero-left {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    max-width: 40%;
-    min-width: 30%;
+    flex-basis: 100%
 }
 
-.right-side {
+.hero-right {
     display: flex;
-
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
 }
 
 /*this is not correct*/
 .img-holder {
     background:  rgb(101, 106, 110);
-    display: flex;
-}
-
-img {
-    background:  rgb(101, 106, 110);
-    width: 500px;
-    height: 200px;
-    align-self: center;
+    padding: 3em 5em;
 }
 
 button {
