@@ -1,4 +1,9 @@
 /*stylesheet for landing page */
+
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+/*LOOK AT SHRINKING SET TO 0?? SET placeholder so text doesn't wrap?  Or min width-content?*/
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +13,7 @@ body {
     font-family: Roboto, sans-serif;
   }
 
-  /* padding ?? */
+  /* not sure about padding ?? */
 .top {
     background-color: #1f2937;
     color: #f9faf8;
@@ -32,17 +37,20 @@ a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
+    padding-bottom: 10px;
   }
 
 .header {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding-bottom: 2em;
+    padding-bottom: 7em;
 }
 
+/* the logo looked better in bold */
 .logo-text {
     font-size: 24px;
+    font-weight: bolder;
 }
 
 .hero {
@@ -57,34 +65,31 @@ a {
     font-weight: 900;
 }
 
-/*not sure about widths*/
 .hero-left {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    flex-basis: 100%
 }
 
+/* expands color into whole flex item area*/
 .hero-right {
     display: flex;
-    flex-direction: column;
     flex-basis: 100%;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-}
-
-/*this is not correct*/
-.img-holder {
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     background:  rgb(101, 106, 110);
-    padding: 3em 5em;
 }
 
-button {
+/* consider breaking out common button styles to button div */
+
+.sign-up {
     border: none;
     border-radius: 8px;
     background: #3882F6;
     color: white;
-    padding: 8px 24px;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight:bold;
   }
 
