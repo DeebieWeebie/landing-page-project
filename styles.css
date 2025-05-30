@@ -11,6 +11,7 @@
 /*padding? review all padding in html*/
 body {
     font-family: Roboto, sans-serif;
+    margin: 0;
   }
 
   /* not sure about padding ?? */
@@ -79,7 +80,22 @@ a {
     justify-content: center;
     align-items: center;
     align-self: stretch;
+    min-width: fit-content;
     background:  rgb(101, 106, 110);
+}
+
+.img-holder {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit:cover;
 }
 
 /* consider breaking out common button styles to button div */
