@@ -27,10 +27,16 @@ body {
 
 /* flex ul to display li items horizontally*/
 /*remove bullets on ul with list style none*/
+/* justify content with min width li prevents text wrap*/
 ul {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+li{
+    min-width: 135px;
 }
 
 /*removes underline on hyperlink*/
@@ -49,9 +55,11 @@ a {
 }
 
 /* the logo looked better in bold */
+/*min width prevents text wrap */
 .logo-text {
     font-size: 24px;
     font-weight: bolder;
+    min-width: 147px;
 }
 
 .hero {
@@ -77,22 +85,8 @@ a {
     max-width: 50%;
 }
 
-/* Figure out placeholder sizing to be like container and correctly resize photo*/
-/* expands color into whole flex item area*/
 .hero-right {
     display: flex;
-}
-
-/* img-holder may not be needed */
-
-.img-holder {
-   
-}
-
-/* check if this acutally works on an image */
-.img {
-    
-   
 }
 
 /* consider breaking out common button styles to button div */
