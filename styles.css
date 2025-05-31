@@ -56,6 +56,7 @@ a {
 
 .hero {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 3em;
 }
@@ -71,30 +72,27 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
+    min-width: 300px;
+    min-height: 250px;
+    max-width: 50%;
 }
 
 /* Figure out placeholder sizing to be like container and correctly resize photo*/
 /* expands color into whole flex item area*/
 .hero-right {
     display: flex;
-    flex-basis: 100%;
-    justify-content: flex-end;
-
-   
-    background:  rgba(107, 117, 126, 0.959);
 }
 
 /* img-holder may not be needed */
 
 .img-holder {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
+   
 }
 
 /* check if this acutally works on an image */
 .img {
- 
+    
+   
 }
 
 /* consider breaking out common button styles to button div */
