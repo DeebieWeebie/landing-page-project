@@ -20,9 +20,9 @@ body {
     color: #f9faf8;
     display: flex;
     flex-direction: column;
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 10em;
+    padding-left: 14em;
+    padding-right: 14em;
+    padding-bottom: 9em;
 }
 
 /* flex ul to display li items horizontally*/
@@ -38,7 +38,7 @@ a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
 .header {
@@ -57,45 +57,44 @@ a {
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 2em;
+    gap: 3em;
 }
 
 .main-text {
     font-size: 48px;
     font-weight: 900;
+    padding-bottom: 8px;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items:flex-start;
 }
 
-/* CHANGE THIS INTO AN ACTUAL IMG PLACEHOLDER */
+/* Figure out placeholder sizing to be like container and correctly resize photo*/
 /* expands color into whole flex item area*/
 .hero-right {
     display: flex;
     flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    min-width: fit-content;
-    background:  rgb(101, 106, 110);
+    justify-content: flex-end;
+
+   
+    background:  rgba(107, 117, 126, 0.959);
 }
+
+/* img-holder may not be needed */
 
 .img-holder {
     display: flex;
-    justify-content: center;
     flex-grow: 1;
     flex-shrink: 0;
 }
 
+/* check if this acutally works on an image */
 .img {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    object-fit:cover;
+ 
 }
 
 /* consider breaking out common button styles to button div */
