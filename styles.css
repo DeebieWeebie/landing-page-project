@@ -24,9 +24,9 @@ body {
     color: #f9faf8;
     display: flex;
     flex-direction: column;
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 5em;
+    padding-left: 13em;
+    padding-right: 13em;
+    padding-bottom: 8em;
 }
 
 /* flex ul to display li items horizontally*/
@@ -55,7 +55,7 @@ a {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
 }
 
 /* the logo looked better in bold */
@@ -96,8 +96,8 @@ a {
 .title {
     font-size: 36px;
     font-weight: 900;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     color: #1f2937;
   }
@@ -105,8 +105,9 @@ a {
 .info {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
-    padding-bottom: 5em;
+    padding-bottom: 7em;
 }
 
 .item {
@@ -132,11 +133,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #e5e7eb;
-    padding-right: 15em;
-    padding-left: 15em;
+    padding-left: 20em;
+    padding-right: 20em;
     padding-top: 8em;
-    padding-bottom: 8em;
+    padding-bottom: 6em;
 }
 
 .inspo-text {
@@ -144,8 +146,16 @@ a {
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
+    padding-left: 10px;
+    align-self: center;
 }
 
+.signature {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: flex-end;
+    padding-top: 4px;
+}
 /* consider breaking out common button styles to button div */
 .sign-up {
     border: none;
