@@ -1,17 +1,21 @@
 /*stylesheet for landing page */
 
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap');
 
 /*LOOK AT SHRINKING SET TO 0?? SET placeholder so text doesn't wrap?  Or min width-content?*/
 
 * {
     box-sizing: border-box;
 }
+
 /*consider flexing body*/
 /*padding? review all padding in html*/
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
+    font-style: normal;
   }
 
   /* not sure about padding ?? */
@@ -59,7 +63,7 @@ a {
 .logo-text {
     font-size: 24px;
     font-weight: bolder;
-    min-width: 235px;
+    min-width: 185px;
 }
 
 .hero {
@@ -111,7 +115,6 @@ a {
 
 .text {
     text-align: center;
-    text-justify: inter-word;
     color: #474849;
     font-size: 18px;
 }
@@ -123,6 +126,24 @@ a {
     min-width: 175px;
     max-height: 175px;
     min-height: 175px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding-right: 15em;
+    padding-left: 15em;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+.inspo-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
 }
 
 /* consider breaking out common button styles to button div */
