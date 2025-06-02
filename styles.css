@@ -157,7 +157,7 @@ a {
     padding-top: 4px;
 }
 /* consider breaking out common button styles to button div */
-.sign-up {
+.more-info {
     border: none;
     border-radius: 8px;
     background: #3882F6;
@@ -167,3 +167,36 @@ a {
     font-weight:bold;
   }
 
+  .sign-up {
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    background: #3882F6;
+    color: white;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight:bold;
+  }
+  .action {
+    background-color: white;
+    padding: 5em 13em;
+    color: white;
+  }
+
+  .container {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 3em 6em;
+    gap: 20px;
+   
+  }
+
+  .action-left {
+    white-space: nowrap;
+  }
+  .action-right {
+    align-self: flex-end;
+    flex-shrink: 0;
+  }
