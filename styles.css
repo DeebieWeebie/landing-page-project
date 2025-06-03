@@ -4,21 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap');
 
-/*LOOK AT SHRINKING SET TO 0?? SET placeholder so text doesn't wrap?  Or min width-content?*/
-
+/* Do button hovers and clicks, link hovers and clicks, rickroll links*/
 * {
     box-sizing: border-box;
 }
 
-/*consider flexing body*/
-/*padding? review all padding in html*/
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
     font-style: normal;
   }
 
-  /* not sure about padding ?? */
 .top {
     background-color: #1f2937;
     color: #f9faf8;
@@ -35,12 +31,12 @@ body {
 ul {
     list-style: none;
     display: flex;
-    gap: 12px;
-    justify-content: flex-end;
+    gap: 20px;   
+    white-space: nowrap;
 }
 
 li{
-    min-width: 135px;
+    align-self: center;
 }
 
 /*removes underline on hyperlink*/
@@ -156,7 +152,7 @@ a {
     align-self: flex-end;
     padding-top: 4px;
 }
-/* consider breaking out common button styles to button div */
+
 .more-info {
     border: none;
     border-radius: 8px;
@@ -177,6 +173,7 @@ a {
     font-size: 16px;
     font-weight:bold;
   }
+
   .action {
     background-color: white;
     padding: 6em 13em;
