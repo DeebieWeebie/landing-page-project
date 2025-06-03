@@ -12,7 +12,7 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0;
     font-style: normal;
-  }
+}
 
 .top {
     background-color: #1f2937;
@@ -44,7 +44,7 @@ a {
     font-size: 18px;
     color: #e5e7eb;
     padding-bottom: 12px;
-  }
+}
 
 /*link hover color change*/
 
@@ -128,7 +128,7 @@ p {
     margin-bottom: 50px;
     text-align: center;
     color: #1f2937;
-  }
+}
 
 .info {
     display: flex;
@@ -193,9 +193,9 @@ p {
     padding: 8px 32px;
     font-size: 16px;
     font-weight:bold;
-  }
+}
 
-  .sign-up {
+.sign-up {
     border-color: white;
     border-style: solid;
     border-radius: 8px;
@@ -204,42 +204,45 @@ p {
     padding: 8px 32px;
     font-size: 16px;
     font-weight:bold;
-  }
+}
 
-  button:hover {
+button:hover {
     background: #00b4f0;
     transition: 0.7s;
-  }
+}
 
-  .action {
+.action {
     background-color: white;
     padding: 6em 13em;
     color: white;
-  }
+}
 
-  .container {
+/* min-width fit content keeps button in container as window gets smaller*/
+.container {
     background-color: #3882f6;
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
     padding: 3em 6em;
     gap: 20px; 
-  }
+    min-width:fit-content;
+}
 
-  .action-left {
-    white-space: nowrap;
-  }
+.action-left {
+    min-width: 308px;
+}
 
-  .action-right {
+/* shrink 0 keeps button from compressing */
+.action-right {
     align-self: flex-end;
     flex-shrink: 0;
-  }
+}
 
-  .footer {
+.footer {
     background-color: #1f2937;
     color: #f9faf8;
     font-size: 18px;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
-  }
+}
