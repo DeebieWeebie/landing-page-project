@@ -43,7 +43,6 @@ a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
-    padding-bottom: 12px;
 }
 
 /*link hover color change*/
@@ -87,18 +86,17 @@ span {
     vertical-align: super;
 }
 
-p {
-    color: #f2f2f2;
-    font-weight: bolder;
-    font-size: 18px;
-    padding-left: 8px;
-}
-
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 3em;
+}
+
+
+.sub-text {
+    color: #f2f2f2;
+    font-size: 18px;
 }
 
 .main-text {
@@ -193,6 +191,7 @@ p {
     padding: 8px 32px;
     font-size: 16px;
     font-weight:bold;
+    margin-top: 10px;
 }
 
 .sign-up {
@@ -221,6 +220,7 @@ button:hover {
 .container {
     background-color: #3882f6;
     display: flex;
+
     justify-content: space-between;
     border-radius: 8px;
     padding: 3em 6em;
