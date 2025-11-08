@@ -41,11 +41,16 @@ body {
 .header__logo-text {
     font-size: 24px;
     font-weight: bolder;
-    color: #00b4f0;
+    color: #00b4f0; font-weight: bolder;
     align-self: flex-start;
     justify-content: flex-start;
     padding-top: 8px;
     min-width: 85px;
+}
+
+.header__logo-tagline {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .header__trademark {
@@ -93,7 +98,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
-    min-width: 400px;
+    min-width: 300px;
     max-height: 250px;
     max-width: 50%;
 }
@@ -101,22 +106,33 @@ body {
 .hero__main-text {
     font-size: 48px;
     font-weight: 900;
-    padding-bottom: 8px;
+    margin: 0;
 }
 
-.hero__sub-text {
-    color: #f2f2f2;
+.hero__sub-text, .action-section__subtext {
+    color: #E5E7EB;
     font-size: 18px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.hero__more-info {
-    border: none;
-    border-radius: 8px;
+.button-style {
     background: #3882F6;
     color: white;
     padding: 8px 32px;
     font-size: 16px;
     font-weight:bold;
+    text-decoration: none;
+}
+
+.button-style:hover {
+    background: #00b4f0;
+    transition: 0.7s;
+}
+
+.hero__more-info {
+    border: none;
+    border-radius: 8px;
     margin-top: 10px;
 }
 
@@ -138,7 +154,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding-bottom: 7em;
+    padding-bottom: 4.5em;
 }
 
 .info-section__item {
@@ -159,47 +175,48 @@ body {
     font-size: 18px;
 }
 
-.inspo-section {
+.tribute-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 19em;
+    padding-right: 19em;
     padding-top: 8em;
     padding-bottom: 6em;
 }
 
-.inspo-section__text {
+.tribute-section__text {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
-    padding-left: 10px;
     align-self: center;
+    margin: 0;
+    padding-bottom: 6px;
 }
 
-.inspo-section__signature {
+.tribute-section__signature {
     font-size: 24px;
     font-weight: 600;
     align-self: flex-end;
-    padding-top: 4px;
+    margin: 0;
+    padding-right: 20px;
 }
 
 .action-section {
     background-color: white;
-    padding: 6em 13em;
+    padding: 6.5em 13em;
     color: white;
 }
 
 .action-section__container {
     background-color: #3882f6;
     display: flex;
-
     justify-content: space-between;
     border-radius: 8px;
-    padding: 3em 6em;
+    padding: 3.5em 5.5em;
     gap: 20px; 
     min-width:fit-content;
 }
@@ -207,33 +224,33 @@ body {
 /* min-width fit content keeps button in container as window gets smaller*/
 .action-section__left {
     min-width: 308px;
+    padding-left: 30px;
+}
+
+.action-section__text {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
 }
 
 /* shrink 0 keeps button from compressing */
 .action-section__right {
     align-self: flex-end;
     flex-shrink: 0;
+    padding-right: 30px;
+    padding-bottom: 12px;
 }
 
 .action-section__sign-up {
     border-color: white;
     border-style: solid;
+    border-width: 3px;
     border-radius: 8px;
-    background: #3882F6;
-    color: white;
-    padding: 8px 32px;
-    font-size: 16px;
-    font-weight:bold;
-}
-
-button:hover {
-    background: #00b4f0;
-    transition: 0.7s;
 }
 
 .footer {
     background-color: #1f2937;
-    color: #f9faf8;
+    color: #E5E7EB;
     font-size: 18px;
     text-align: center;
     padding-top: 2em;
